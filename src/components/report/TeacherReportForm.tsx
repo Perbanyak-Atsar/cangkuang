@@ -165,7 +165,7 @@ const TeacherReportForm: React.FC<TeacherReportFormProps> = ({ registrationData 
           <FormField
             label="Tanggal Mulai"
             name="periodStart"
-            type="text"
+            type="date"
             value={formData.periodStart}
             onChange={handleChange}
             required
@@ -174,7 +174,7 @@ const TeacherReportForm: React.FC<TeacherReportFormProps> = ({ registrationData 
           <FormField
             label="Tanggal Selesai"
             name="periodEnd"
-            type="text"
+            type="date"
             value={formData.periodEnd}
             onChange={handleChange}
             required

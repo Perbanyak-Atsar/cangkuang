@@ -8,7 +8,7 @@ interface TeacherRegistrationProps {
 
 const sektorData = {
   'Cangkuang': {
-    musyrif: ['Anggara', 'Utis', 'Usman',],
+    musyrif: ['Anggara', 'Utis', 'Usman','Muchtar',],
     pelajar: {
       'Anggara': ['Hari', 'Utis', 'Usman', 'Muchtar'],
       'Utis': ['Husen'],
@@ -16,6 +16,14 @@ const sektorData = {
       'Muchtar': ['Nurdin', 'Riki', 'Aziz', 'Budi']
     }
   },
+  'Banjaran': {
+    musyrif: ['Imam', 'Toni', 'Indra Gumilar',],
+    pelajar: {
+      'Imam': ['Anggara', 'Asep', 'Rahmat', 'Deni P', 'Engkos'],
+      'Toni': ['Arba', 'Fardan', 'Yusuf', 'Erlan'],
+      'Indra Gumilar': ['Imam', 'Mulyana', 'Aep', 'Dani'],
+    }
+  }
   
 };
 
