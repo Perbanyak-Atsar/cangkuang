@@ -19,8 +19,8 @@ const AttendanceForm: React.FC = () => {
     status: '',
     kehadiran: '',
     alasan: '',
-    membawa_kontakan: '',
-    nama_kontakan: '',
+    // membawa_kontakan: '',
+    // nama_kontakan: '',
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -36,7 +36,7 @@ const AttendanceForm: React.FC = () => {
     setIsSubmitting(true);
 
     try {
-      await fetch('https://script.google.com/macros/s/AKfycbzwcXvI2-tAlR9LqeN9rtcsL9r7_N_ntPwdd1DLVaUfazu0hCt8Lwydxf_h8evMqgPrUQ/exec', {
+      await fetch('https://script.google.com/macros/s/AKfycbxoVkU1XaUvlSjC-tYl65CWYDnHAxtoRoyjYWvsZsPtPUY2fbDZq78qzizde_XYuj1H/exec', {
         method: 'POST',
         body: JSON.stringify(formData),
         mode: 'no-cors'
@@ -151,7 +151,7 @@ const AttendanceForm: React.FC = () => {
           />
         </div>
       )}
-
+    {false && (
       <div>
         <label htmlFor="membawa_kontakan" className="block text-sm font-medium text-gray-700">
           Membawa Kontakan
@@ -169,6 +169,7 @@ const AttendanceForm: React.FC = () => {
           <option value="Tidak">Tidak</option>
         </select>
       </div>
+      )}
 
       {formData.membawa_kontakan === 'Ya' && (
         <div>
